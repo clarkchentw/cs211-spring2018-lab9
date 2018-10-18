@@ -1,0 +1,8 @@
+MyDateMain: MyDateMain.o MyDate.o
+	g++ -o MyDateMain MyDateMain.o MyDate.o
+
+MyDateMain.o: MyDateMain.cpp MyDate.h
+	g++ -c MyDateMain.cpp
+
+MyDate.o: MyDate.cpp MyDate.h
+	g++ -c MyDate.cpp
